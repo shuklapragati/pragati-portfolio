@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pragati Shukla | Portfolio</title>
+  <!-- Tailwind  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .font-great-vibes{
+      font-family: 'Great Vibes' , cursive;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#FDF6F0] text-gray-800">
+  <!-- Navbar -->
+<header class="fixed top-4 left-4 right-4 z-50 bg-white backdrop-blur-md text-black shadow-[0_0_15px_rgba(255,255,255,0.4)] rounded-2xl px-6 py-1.5 border border-white/20">
+  <div class="flex justify-between items-center max-w-6xl mx-auto w-full">
+    <!-- Logo + Name (Nav) -->
+    <a href="{{ url_for('index') }}" class="flex items-center space-x-3 group">
+  <!-- Logo -->
+  <div class="relative w-12 h-12 rounded-full bg-orange-400 flex items-center justify-center overflow-hidden">
+  <span class="absolute text-white text-3xl font-semibold font-[Great_Vibes] z-10">P</span>
+  <span class="absolute text-white text-3xl font-semibold font-[Great_Vibes] translate-x-[4px] translate-y-[4px] opacity-90 z-20">S</span>
+</div>
+
+  <!-- Name-->
+  <span class="text-2xl font-semibold transition">
+    <span class="text-orange-400">प्र</span><span class="text-black">gati</span>
+  </span>  
+  
+</a>
+    <nav class="space-x-6 hidden md:block">
+      <a href="{{url_for('index')}}" class="hover:text-orange-400 transition">Home</a>
+      <a href="{{url_for('about')}}" class="hover:text-orange-400 transition">About</a>
+      <a href="{{url_for('skill')}}" class="hover:text-orange-400 transition">Skills</a>
+      <a href="{{url_for('projects')}}" class="hover:text-orange-400 transition">Projects</a>
+      <a href="{{url_for('services')}}" class="hover:text-orange-400 transition">Services</a>
+      <a href="{{url_for('contact')}}" class="hover:text-orange-400 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+  {% block content %}{% endblock %}
+
+  <footer class="text-center py-4 mt-10 text-sm text-gray-500">
+    © 2025 Pragati Shukla. All rights reserved.
+  </footer>
+</body>
+</html>

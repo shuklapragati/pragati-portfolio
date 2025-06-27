@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="bg-[#0f0f0f] text-white py-20 px-6 min-h-screen" id="contact">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">
+      <span class="text-white">Contact</span> <span class="text-orange-400">Me</span>
+    </h2>
+    
+    {% if success %}
+      <div class="bg-green-500 text-white py-2 px-4 rounded mb-6">
+        Your message has been sent successfully!
+      </div>
+    {% endif %}
+
+    <form method="POST" class="space-y-6">
+      <input type="text" name="name" placeholder="Your Name" required
+             class="w-full bg-[#1c1c1c] text-white border border-gray-700 rounded px-4 py-3 focus:outline-none focus:border-orange-400" />
+
+      <input type="email" name="email" placeholder="Your Email" required
+             class="w-full bg-[#1c1c1c] text-white border border-gray-700 rounded px-4 py-3 focus:outline-none focus:border-orange-400" />
+
+      <textarea name="message" placeholder="Your Message" rows="5" required
+                class="w-full bg-[#1c1c1c] text-white border border-gray-700 rounded px-4 py-3 focus:outline-none focus:border-orange-400"></textarea>
+
+      <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

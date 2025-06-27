@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="bg-[#0f0f0f] text-white py-20 px-6 min-h-screen" id="services">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-12">
+      <span class="text-white">My</span> <span class="text-orange-400">Services</span>
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
+      
+      <!-- 1 -->
+      <div class="bg-[#1c1c1c] p-6 rounded-xl shadow hover:shadow-orange-400 transition duration-300">
+        <div class="flex items-center mb-4">
+          <i class="fa-solid fa-code text-orange-400 text-3xl mr-4"></i>
+          <h3 class="text-xl font-semibold">Web Development</h3>
+        </div>
+        <p class="text-gray-400">I build responsive and dynamic websites using HTML, CSS, Flask, Bootstrap, and SQLite.</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-[#1c1c1c] p-6 rounded-xl shadow hover:shadow-orange-400 transition duration-300">
+        <div class="flex items-center mb-4">
+          <i class="fa-solid fa-brain text-orange-400 text-3xl mr-4"></i>
+          <h3 class="text-xl font-semibold">AI/ML Learning</h3>
+        </div>
+        <p class="text-gray-400">Exploring real-world applications of AI/ML and building basic models and projects.</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="bg-[#1c1c1c] p-6 rounded-xl shadow hover:shadow-orange-400 transition duration-300">
+        <div class="flex items-center mb-4">
+          <i class="fa-solid fa-chart-line text-orange-400 text-3xl mr-4"></i>
+          <h3 class="text-xl font-semibold">Data Visualization</h3>
+        </div>
+        <p class="text-gray-400">I enjoy working with datasets and creating clear visual reports using Python tools.</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="bg-[#1c1c1c] p-6 rounded-xl shadow hover:shadow-orange-400 transition duration-300">
+        <div class="flex items-center mb-4">
+          <i class="fa-solid fa-plug text-orange-400 text-3xl mr-4"></i>
+          <h3 class="text-xl font-semibold">API Integration</h3>
+      </div>
+      <p class="text-gray-400">I use RESTful APIs to connect applications to real-time services like maps, weather, and more.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock %}
